@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Hub — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #ffffff;
+            padding: 2rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .tagline { color: #6e6e73; font-size: 1rem; margin-bottom: 2.5rem; }
+        h2 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+        p, li { margin-bottom: 0.75rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+        a { color: #0071e3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-box {
+            background: #f5f5f7;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        .contact-box a {
+            display: inline-block;
+            background: #0071e3;
+            color: #ffffff;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 0.75rem;
+        }
+        .contact-box a:hover { background: #0077ed; text-decoration: none; }
+        details {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e5e5e7;
+            padding-bottom: 1rem;
+        }
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            padding: 0.5rem 0;
+        }
+        summary:hover { color: #0071e3; }
+        details p { margin-top: 0.5rem; color: #424245; }
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e5e7;
+            color: #6e6e73;
+            font-size: 0.85rem;
+        }
+        .footer a { color: #6e6e73; }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1d1d1f; color: #f5f5f7; }
+            .tagline { color: #a1a1a6; }
+            .contact-box { background: #2d2d2f; }
+            details { border-bottom-color: #3d3d3f; }
+            details p { color: #d1d1d6; }
+            .footer { border-top-color: #3d3d3f; color: #a1a1a6; }
+            .footer a { color: #a1a1a6; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Family Hub &mdash; Support</h1>
+<p class="tagline">We&rsquo;re here to help you get the most out of Family Hub.</p>
+
+<div class="contact-box">
+    <p>Have a question, found a bug, or want to suggest a feature?</p>
+    <a href="mailto:jarvishomehub@icloud.com?subject=Family%20Hub%20Support">Email Us</a>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<details>
+    <summary>How do I invite family members?</summary>
+    <p>Open the app and go to Settings (gear icon). Tap &ldquo;Manage Family&rdquo; and then &ldquo;Invite Member&rdquo;. This uses Apple&rsquo;s standard iCloud sharing &mdash; your family member will receive an invitation they can accept from their device.</p>
+</details>
+
+<details>
+    <summary>Where is my data stored?</summary>
+    <p>All your data is stored in your family&rsquo;s private iCloud account using Apple&rsquo;s CloudKit service. We have no server and never see your data. For full details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+</details>
+
+<details>
+    <summary>How do I set up the Jarvis AI assistant?</summary>
+    <p>Jarvis requires an Anthropic API key. Go to Settings &rarr; Jarvis and enter your API key. You can get a key from <a href="https://console.anthropic.com/">console.anthropic.com</a>. Jarvis is entirely optional &mdash; the app works perfectly without it.</p>
+</details>
+
+<details>
+    <summary>How do I share my Apple Calendar with the family?</summary>
+    <p>Go to the Calendar tab and tap the calendar icon in the top right. Select which of your Apple Calendars you want to mirror into the family view. Only you control which calendars are visible to your family.</p>
+</details>
+
+<details>
+    <summary>Can I use the app offline?</summary>
+    <p>Yes. Family Hub works offline and will sync your changes when you reconnect to the internet. An orange banner appears at the top of the screen when you&rsquo;re offline.</p>
+</details>
+
+<details>
+    <summary>How do I delete my data?</summary>
+    <p>You can delete individual items (lists, events, messages) within the app. To remove all Family Hub data from iCloud, go to your device&rsquo;s Settings &rarr; [Your Name] &rarr; iCloud &rarr; Manage Storage &rarr; Family Hub.</p>
+</details>
+
+<details>
+    <summary>The app isn&rsquo;t syncing between devices</summary>
+    <p>Make sure both devices are signed in to the same iCloud account (or the family member has accepted the share invitation), have an internet connection, and have iCloud Drive enabled. Try pulling down to refresh, or close and reopen the app.</p>
+</details>
+
+<div class="footer">
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>&copy; 2026 Jason Sleeman. All rights reserved.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Hub — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #ffffff;
+            padding: 2rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        .updated {
+            color: #6e6e73;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            color: #1d1d1f;
+        }
+        p, li {
+            margin-bottom: 0.75rem;
+            color: #1d1d1f;
+        }
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li { margin-bottom: 0.4rem; }
+        strong { font-weight: 600; }
+        a { color: #0071e3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: #f5f5f7;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.25rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.6rem 0.75rem;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        th {
+            font-weight: 600;
+            color: #6e6e73;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e5e5e7;
+            margin: 2rem 0;
+        }
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e5e7;
+            color: #6e6e73;
+            font-size: 0.85rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1d1d1f; color: #f5f5f7; }
+            h1, h2 { color: #f5f5f7; }
+            p, li { color: #f5f5f7; }
+            .updated { color: #a1a1a6; }
+            .highlight { background: #2d2d2f; }
+            th { color: #a1a1a6; }
+            th, td { border-bottom-color: #3d3d3f; }
+            hr { border-top-color: #3d3d3f; }
+            .footer { border-top-color: #3d3d3f; color: #a1a1a6; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Family Hub &mdash; Privacy Policy</h1>
+<p class="updated">Last updated: 6 March 2026</p>
+
+<div class="highlight">
+    <p><strong>Your data never leaves your iCloud.</strong> Family Hub has no backend server. We never see, collect, or have access to your family&rsquo;s data.</p>
+</div>
+
+<h2>1. Our Core Privacy Principle</h2>
+<p>Jason Sleeman (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) built Family Hub as a free iOS application. All information you enter &mdash; lists, meals, calendar events, chat messages &mdash; is stored exclusively in your family&rsquo;s private iCloud account via Apple&rsquo;s CloudKit service.</p>
+<p>If you delete the app, your data remains safely in your iCloud account. If our company ceases to exist, your data is completely unaffected.</p>
+
+<h2>2. What Data Is Stored</h2>
+<p>Family Hub stores the following data in <strong>your iCloud account</strong>:</p>
+<ul>
+    <li><strong>Family information</strong> &mdash; family name, member display names, and profile avatars</li>
+    <li><strong>Lists</strong> &mdash; grocery items, dinner plans, and custom lists you create</li>
+    <li><strong>Calendar events</strong> &mdash; global family events and mirrored snapshots of Apple Calendar events you choose to share</li>
+    <li><strong>Chat messages</strong> &mdash; your Jarvis AI conversation history and family group chat messages</li>
+    <li><strong>Preferences</strong> &mdash; calendar visibility, conflict dismissal patterns, and notification settings</li>
+    <li><strong>Learning data</strong> &mdash; patterns the app learns when you dismiss scheduling conflicts</li>
+</ul>
+<p>All of this data is stored in your family&rsquo;s private CloudKit zone. We have no access to it.</p>
+
+<h2>3. Apple Calendar Access</h2>
+<p>Family Hub requests access to your Apple Calendar to mirror selected calendars into the shared family view:</p>
+<ul>
+    <li><strong>Permission-based</strong> &mdash; the app only accesses your calendars after you grant explicit permission</li>
+    <li><strong>User-controlled</strong> &mdash; you choose which calendars to share; unselected calendars are never read</li>
+    <li><strong>Read-only mirroring</strong> &mdash; the app reads events to display in the family calendar but does not modify your Apple Calendar</li>
+    <li><strong>Local processing</strong> &mdash; calendar data is processed on your device</li>
+</ul>
+<p>You can revoke calendar access at any time in Settings &rarr; Privacy &amp; Security &rarr; Calendars.</p>
+
+<h2>4. Jarvis AI Assistant</h2>
+<p>Family Hub includes an optional AI assistant called Jarvis, powered by the Anthropic Claude API:</p>
+<ul>
+    <li><strong>Bring Your Own Key</strong> &mdash; the family admin supplies their own Anthropic API key, stored in your family&rsquo;s private iCloud zone, never on our servers</li>
+    <li><strong>What is sent</strong> &mdash; your message, family member first names, current grocery items, tonight&rsquo;s dinner plan, and upcoming calendar event titles/times</li>
+    <li><strong>What is NOT sent</strong> &mdash; Apple IDs, iCloud identifiers, email addresses, or any other personally identifiable information</li>
+    <li><strong>No persistent storage</strong> &mdash; each request is stateless; Anthropic does not retain your data beyond processing</li>
+    <li><strong>Entirely optional</strong> &mdash; the app is fully functional without configuring an API key</li>
+</ul>
+<p>For details on how Anthropic handles data, see <a href="https://www.anthropic.com/privacy">Anthropic&rsquo;s Privacy Policy</a>.</p>
+
+<h2>5. Push Notifications</h2>
+<p>Family Hub uses Apple Push Notifications via CloudKit subscriptions to notify you of changes (e.g., new list items, chat messages). Notifications are delivered through Apple&rsquo;s standard infrastructure and can be disabled in your device settings.</p>
+
+<h2>6. Widgets</h2>
+<p>Home screen and lock screen widgets display summaries of your family data. Widget data is stored locally on your device and is never transmitted to any external service.</p>
+
+<h2>7. Data Sharing Within Your Family</h2>
+<p>When you join a family in Family Hub, shared data is visible to all accepted members. This sharing is powered by Apple&rsquo;s CloudKit sharing and controlled by the family owner. Personal list items remain private unless you explicitly share them.</p>
+
+<h2>8. Third-Party Services</h2>
+<table>
+    <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Data Sent</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Apple CloudKit</td><td>Data storage &amp; sync</td><td>All app data (in your iCloud)</td></tr>
+        <tr><td>Apple EventKit</td><td>Calendar mirroring</td><td>Calendars you select</td></tr>
+        <tr><td>Apple Push Notifications</td><td>Real-time updates</td><td>Notification metadata only</td></tr>
+        <tr><td>Anthropic Claude API</td><td>AI assistant (optional)</td><td>Context + message (see Section 4)</td></tr>
+    </tbody>
+</table>
+<p>We do <strong>not</strong> use any third-party analytics, advertising, crash reporting, or tracking services.</p>
+
+<h2>9. Data Retention &amp; Deletion</h2>
+<ul>
+    <li>All data is in your iCloud account &mdash; you can delete items within the app at any time</li>
+    <li>Removing the app does not delete your iCloud data; to fully remove data, go to Settings &rarr; [Your Name] &rarr; iCloud &rarr; Manage Storage &rarr; Family Hub</li>
+    <li>We have no server, so we retain no user data whatsoever</li>
+</ul>
+
+<h2>10. Children&rsquo;s Privacy</h2>
+<p>Family Hub may be used by children as part of a family group. We do not collect personal information from children independently. All data is managed within the family&rsquo;s iCloud account, controlled by the family admin.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+<h2>12. Contact Us</h2>
+<p>If you have questions about this Privacy Policy:</p>
+<p><strong>Email:</strong> <a href="mailto:jarvishomehub@icloud.com">jarvishomehub@icloud.com</a></p>
+
+<div class="footer">
+    <p>This privacy policy is effective as of 6 March 2026.</p>
+    <p>&copy; 2026 Jason Sleeman. All rights reserved.</p>
+</div>
+
+</body>
+</html>
