@@ -96,10 +96,10 @@
 <body>
 
 <h1>Family Hub &mdash; Privacy Policy</h1>
-<p class="updated">Last updated: 6 March 2026</p>
+<p class="updated">Last updated: 17 March 2026</p>
 
 <div class="highlight">
-    <p><strong>Your data never leaves your iCloud.</strong> Family Hub has no backend server. We never see, collect, or have access to your family&rsquo;s data.</p>
+    <p><strong>Your data stays private.</strong> Family Hub stores all your family data in your private iCloud account. We never see, collect, or have access to your family&rsquo;s data. The only external service is a lightweight AI proxy used for the optional Jarvis assistant (see Section 4).</p>
 </div>
 
 <h2>1. Our Core Privacy Principle</h2>
@@ -129,13 +129,13 @@
 <p>You can revoke calendar access at any time in Settings &rarr; Privacy &amp; Security &rarr; Calendars.</p>
 
 <h2>4. Jarvis AI Assistant</h2>
-<p>Family Hub includes an optional AI assistant called Jarvis, powered by the Anthropic Claude API:</p>
+<p>Family Hub includes an optional AI assistant called Jarvis, available as an in-app subscription. Jarvis is powered by the Anthropic Claude API via a developer-operated proxy:</p>
 <ul>
-    <li><strong>Bring Your Own Key</strong> &mdash; the family admin supplies their own Anthropic API key, stored in your family&rsquo;s private iCloud zone, never on our servers</li>
+    <li><strong>Subscription required</strong> &mdash; Jarvis AI is unlocked via an auto-renewable subscription with Family Sharing. The app is fully functional without it.</li>
+    <li><strong>Proxy architecture</strong> &mdash; AI requests are routed through a lightweight Cloudflare Worker proxy operated by us. The proxy is stateless &mdash; it does not store, log, or retain any user data. It exists solely to securely forward your request to the Anthropic API and return the response.</li>
     <li><strong>What is sent</strong> &mdash; your message, family member first names, current grocery items, tonight&rsquo;s dinner plan, and upcoming calendar event titles/times</li>
     <li><strong>What is NOT sent</strong> &mdash; Apple IDs, iCloud identifiers, email addresses, or any other personally identifiable information</li>
-    <li><strong>No persistent storage</strong> &mdash; each request is stateless; Anthropic does not retain your data beyond processing</li>
-    <li><strong>Entirely optional</strong> &mdash; the app is fully functional without configuring an API key</li>
+    <li><strong>No persistent storage</strong> &mdash; each request is stateless; neither the proxy nor Anthropic retains your data beyond processing</li>
 </ul>
 <p>For details on how Anthropic handles data, see <a href="https://www.anthropic.com/privacy">Anthropic&rsquo;s Privacy Policy</a>.</p>
 
@@ -157,7 +157,8 @@
         <tr><td>Apple CloudKit</td><td>Data storage &amp; sync</td><td>All app data (in your iCloud)</td></tr>
         <tr><td>Apple EventKit</td><td>Calendar mirroring</td><td>Calendars you select</td></tr>
         <tr><td>Apple Push Notifications</td><td>Real-time updates</td><td>Notification metadata only</td></tr>
-        <tr><td>Anthropic Claude API</td><td>AI assistant (optional)</td><td>Context + message (see Section 4)</td></tr>
+        <tr><td>Cloudflare Worker (proxy)</td><td>AI request forwarding</td><td>Context + message (stateless pass-through)</td></tr>
+        <tr><td>Anthropic Claude API</td><td>AI assistant (optional, subscription)</td><td>Context + message (see Section 4)</td></tr>
     </tbody>
 </table>
 <p>We do <strong>not</strong> use any third-party analytics, advertising, crash reporting, or tracking services.</p>
@@ -166,7 +167,7 @@
 <ul>
     <li>All data is in your iCloud account &mdash; you can delete items within the app at any time</li>
     <li>Removing the app does not delete your iCloud data; to fully remove data, go to Settings &rarr; [Your Name] &rarr; iCloud &rarr; Manage Storage &rarr; Family Hub</li>
-    <li>We have no server, so we retain no user data whatsoever</li>
+    <li>The AI proxy is stateless and retains no user data. We do not operate any other server.</li>
 </ul>
 
 <h2>10. Children&rsquo;s Privacy</h2>
@@ -180,7 +181,7 @@
 <p><strong>Email:</strong> <a href="mailto:jarvishomehub@icloud.com">jarvishomehub@icloud.com</a></p>
 
 <div class="footer">
-    <p>This privacy policy is effective as of 6 March 2026.</p>
+    <p>This privacy policy is effective as of 17 March 2026.</p>
     <p>&copy; 2026 Jason Sleeman. All rights reserved.</p>
 </div>
 
